@@ -1,0 +1,88 @@
+@charset"utf-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+
+body {
+    color: #8b4515;
+    text-align: center;
+    
+}
+header {
+    padding:30px 20px;
+}
+header h1 {
+    color: #ff6347;
+    text-align: center;
+    font-size: 3em;
+    background-image: url(images/img_cookies.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+main p {
+    font-size: 1.5em;
+    margin:0 20px;
+    text-align: center;
+    
+    
+}
+section .container {
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+    
+section h2 {
+    padding: 10px;
+    font-size: 1.5em;
+    color: #ff6347;
+    background-color:#fffaf0;
+    
+}
+
+}
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    }
+.flex-box h2 {
+    padding-bottom: 10px;
+}
+.box {
+    background-color:#fff0f5;
+    padding-top: 10px;
+}
+footer p {
+    padding-bottom:20px;
+    text-align: center;
+}  
+footer p a {
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    text-align:center;
+    background: #bc8f8f;
+    color: #FFF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 0px 5px #bc8f8f;
+    border: dashed 1px #FFF;
+    }
+
+.button:hover{
+	border: dotted 1px #FFF;
+}
+@media (max-width: 768px) {
+   .flex-box {
+        flex-direction: column;
+       
+   }
+    header h1 .img {
+    height: 50%;
+}
+        
