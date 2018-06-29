@@ -1,0 +1,89 @@
+@charset"utf-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+$baseColor: #ff6347;
+$subColor: #fffaf0;
+$keyColor: #fff0f5;
+$fontColor: #8b4515;
+$shadowColor: #ff4500;
+
+body {
+ color: $fontColor;
+ text-align: center;
+}
+header {
+ background-image: url(../images/img_cookies.jpg);
+ background-position: center;
+ background-size: cover;
+ height: 500px;
+}
+header h1 {
+ color: $baseColor;
+ text-align: center;
+ font-size: 4em; 
+ text-shadow: 1px 1px 0 $shadowColor,-1px 1px 0 $shadowColor,
+              1px -1px 0 $shadowColor,-1px -1px 0 $shadowColor;
+}
+main p {
+ font-size: 1.5em;
+ margin:20px;
+ padding:20px 0 20px 0;
+ text-align: center;
+}
+section .container {
+ display: flex;
+ justify-content: space-between;
+}
+section h2 {
+ padding: 10px;
+ font-size: 1.5em;
+ color: $baseColor;
+ background-color: $subColor;
+}
+.flex-box {
+ padding: 0 7.5px 0 7.5px;
+}
+.flex-box h2 {
+ padding-bottom: 10px;
+}
+.box {
+ background-color:$keyColor;
+ padding: 30px 7px 30px 7px;
+ line-height: 20px;
+ }
+footer {
+ margin: 20px;
+}
+footer p {
+ padding: 20px 20px 10px 20px;
+ text-align: center;
+}  
+footer p a {
+ text-align: center;
+}
+.button {
+ display: inline-block;
+ padding: 0.5em 1em;
+ text-decoration: none;
+ text-align:center;
+ background: #bc8f8f;
+ color: #FFF;
+ border-radius: 4px;
+ box-shadow: 0px 0px 0px 5px #bc8f8f;
+ border: dashed 1px #FFF;
+}
+.button:hover{
+ border: dotted 1px #FFF;
+ }
+@media (max-width: 768px) {
+.container {
+ flex-direction: column;
+}
+header {
+ padding:10px 20px;
+ background-image: url(../images/img_cookies.jpg);
+ background-position: center;
+ background-size: cover;
+ height: 250px;
+}
+}
